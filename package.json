@@ -1,0 +1,46 @@
+{
+    "name": "my-project",
+    "source": "src/index.html",
+    "browserslist": [
+        "> 0.01%",
+        "last 3 versions",
+        "Firefox ESR",
+        "not dead"
+    ],
+    "scripts": { 
+    "start": "npm-run-all clean parcel:dev", 
+    "clean": "rimraf dist .parcel-cache", 
+    "parcel:dev": "parcel src/index.html" 
+},
+
+   
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "parcel": "latest",
+        "parcel-bundler": "^1.12.5",
+        "postcss": "^8.4.38",
+        "posthtml-include": "^2.0.1",
+        "process": "^0.11.10",
+        "rimraf": "^5.0.5"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.4",
+        "@emotion/styled": "^11.11.5",
+        "@fontsource/roboto": "^5.0.12",
+        "@fortawesome/fontawesome-free": "^6.5.2",
+        "@material/button": "^6.0.0",
+        "@material/mwc-icon": "^0.27.0",
+        "@material/mwc-switch": "^0.27.0",
+        "@mui/icons-material": "^5.15.15",
+        "@mui/material": "^5.15.15",
+        "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+        "animate.css": "^4.1.1",
+        "autoprefixer": "^9.8.0",
+        "formik": "^2.4.5",
+        "styled-components": "^6.1.8"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
+}
